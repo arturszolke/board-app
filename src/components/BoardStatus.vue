@@ -6,10 +6,10 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper m-5 rounded-2">
-        <div class="boardStatus">
-            <div class="">
-                <h2>{{ status.name }}</h2>
+    <div class="wrapper m-5 border border-dark rounded">
+        <div class="boardStatus rounded">
+            <div class="fw-bolder statusName rounded-top">
+                <h2 class="py-3">{{ status.name }}</h2>
             </div>
         </div>
     </div>
@@ -20,12 +20,17 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .boardStatus {
-    border: 1px solid white;
-    width: 200px;
-    min-height: 600px;
+    width: 100%;
+    min-height: 800px;
+    background-color: #dbdbdb;
+
+}
+
+.statusName {
+    background-color: #3b3b3b;
+    color: #EEE5E9;
 }
 </style>
