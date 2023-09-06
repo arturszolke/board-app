@@ -8,8 +8,8 @@ export default {
 <template>
     <div class="wrapper m-5 rounded-2">
         <div class="boardStatus">
-            <div>
-                {{ status.name }}
+            <div class="">
+                <h2>{{ status.name }}</h2>
             </div>
         </div>
     </div>
