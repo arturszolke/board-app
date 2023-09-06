@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper m-5 border border-dark rounded">
+    <div class="wrapper m-5 rounded">
         <div class="boardStatus rounded">
             <div class="fw-bolder statusName rounded-top">
                 <h2 class="py-3">{{ status.name }}</h2>
