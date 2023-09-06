@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="wrapper m-5 rounded-2">
         <div class="boardStatus">
             <div class="">
                 <h2>{{ status.name }}</h2>
@@ -20,12 +20,12 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .boardStatus {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 200px;
-    height: 200px;
-    margin: 10px;
+    min-height: 600px;
 }
 </style>
