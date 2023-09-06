@@ -8,8 +8,8 @@ export default {
 <template>
     <div class="wrapper">
         <div class="boardStatus">
-            <div>
-                {{ status.name }}
+            <div class="">
+                <h2>{{ status.name }}</h2>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@ export default {
 }
 
 .boardStatus {
-    border: 1px solid white;
+    border: 1px solid black;
     width: 200px;
     height: 200px;
     margin: 10px;
