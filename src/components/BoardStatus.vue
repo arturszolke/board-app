@@ -56,7 +56,7 @@ export default {
 }
 
 .fallbackStyleClass {
-    opacity: 0.75 !important;
+    opacity: 1 !important;
 }
 
 .ghost {
