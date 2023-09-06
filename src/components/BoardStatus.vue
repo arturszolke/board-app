@@ -23,7 +23,7 @@ export default {
 }
 
 .boardStatus {
-    border: 1px solid white;
+    border: 1px solid black;
     width: 200px;
     height: 200px;
     margin: 10px;
