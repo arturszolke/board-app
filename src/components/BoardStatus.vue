@@ -23,10 +23,12 @@ export default {
 }
 
 .boardStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
     width: 200px;
     height: 200px;
     margin: 10px;
-    float: right;
 }
 </style>
