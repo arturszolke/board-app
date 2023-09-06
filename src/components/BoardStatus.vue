@@ -14,7 +14,7 @@ export default {
     <div class="wrapper m-5 rounded">
         <div class="boardStatus rounded">
             <div class="fw-bolder statusName rounded-top">
-                <h2 class="py-3">{{ status.name }}</h2>
+                <h2 class="p-3 text-start">{{ status.name }} <span class="fs-4">{{ status.tasks.length }}</span></h2>
             </div>
             <!-- <div v-for="(task, id) in status.tasks" :key="id">
                 {{ task.title }}
@@ -25,11 +25,11 @@ export default {
                     fallback-class="fallbackStyleClass" :force-fallback="true" :animation="200" :list="status.tasks"
                     item-key="id">
                     <template #item="{ element: task }">
-                        <div class="drag bg-primary rounded-2 m-2 p-2">
-                            <h4>
+                        <div class="drag bg-white rounded-2 m-2 p-2">
+                            <h4 class="text-start">
                                 {{ task.title }}
                             </h4>
-                            <p>
+                            <p class="text-start">
                                 {{ task.description }}
                             </p>
                         </div>
@@ -60,7 +60,7 @@ export default {
 }
 
 .draggable {
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .drag {
