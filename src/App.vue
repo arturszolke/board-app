@@ -11,7 +11,8 @@ export default {
       status: [
         { id: 1, name: 'Todo', tasks: [] },
         { id: 2, name: 'In Progress', tasks: [] },
-        { id: 3, name: 'Done', tasks: [] }
+        { id: 3, name: 'Done', tasks: [] },
+        { id: 4, name: 'Test', tasks: [] },
       ]
     }
   },

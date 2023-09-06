@@ -23,10 +23,9 @@ export default {
 }
 
 .boardStatus {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 200px;
     height: 200px;
     margin: 10px;
-    float: right;
 }
 </style>
