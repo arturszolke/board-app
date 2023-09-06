@@ -1,17 +1,19 @@
 <script lang="ts">
 import Draggable from 'vuedraggable'
+import BoardTask from './BoardTask.vue'
 
 export default {
     name: 'BoardStatus',
     props: ['status'],
     components: {
-        Draggable
+        Draggable,
+        BoardTask
     },
 }
 </script>
 
 <template>
-    <div class="wrapper m-5 rounded">
+    <div class="wrapper m-4 rounded">
         <div class="boardStatus rounded">
             <div class="fw-bolder statusName rounded-top">
                 <h2 class="p-3 text-start">{{ status.name }} <span class="fs-4 text-muted">{{ status.tasks.length }}</span>
@@ -22,14 +24,7 @@ export default {
                     fallback-class="fallbackStyleClass" :force-fallback="true" :animation="200" :list="status.tasks"
                     item-key="id">
                     <template #item="{ element: task }">
-                        <div class="drag bg-white rounded-2 m-2 p-2">
-                            <h4 class="text-start">
-                                {{ task.title }}
-                            </h4>
-                            <p class="text-start">
-                                {{ task.description }}
-                            </p>
-                        </div>
+                        <BoardTask :task="task" />
                     </template>
                 </Draggable>
             </div>
@@ -58,10 +53,6 @@ export default {
 
 .draggable {
     min-height: 500px;
-}
-
-.drag {
-    cursor: grab;
 }
 
 .fallbackStyleClass {
