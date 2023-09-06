@@ -22,7 +22,7 @@ export default {
             <div>
                 <Draggable class="draggable" ghost-class="ghost" drag-class="dragClass" group="tasks"
                     fallback-class="fallbackStyleClass" :force-fallback="true" :animation="200" :list="status.tasks"
-                    item-key="id">
+                    item-key="index">
                     <template #item="{ element: task }">
                         <BoardTask :task="task" />
                     </template>

@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-    <button @click="console.log(status)">status</button>
+    <!-- <button @click="console.log(status)">status</button> -->
     <div class="app m-0">
         <div class="row">
             <div class="col p-0" v-for="(state, id) in status" :key="id">
